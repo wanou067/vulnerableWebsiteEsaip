@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Se connecter</title>
+</head>
+<body>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+
+
+        <!-- Login Form -->
+        <h1>Se connecter</h1>
+        <form action="/login.php" method="post">
+            <!-- <form action="/loginFixed.php" method="post"> -->
+            <input type="text" id="login" class="fadeIn second" name="name" placeholder="Nom">
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="Mot de passe">
+            <input type="submit" class="fadeIn fourth" value="Se connecter">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Mot de passe oublié ?</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
